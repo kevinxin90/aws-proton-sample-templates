@@ -5,9 +5,17 @@ pipeline:
   packaging_commands: make publish
 
 instances:
-  - name: "front-end"
+  - name: "loop-project"
     environment: "multi-svc-beta"
     spec:
-      resource_name: task
-      resource_handler: src/api
-      lambda_runtime: ruby2.7
+      resource_name: ids
+      resource_handler: handler
+      lambda_runtime: nodejs12.x
+      code_uri: s3://proton-lambda-loop/function.zip
+      funcs:
+        - name: "a"
+          method: "GET"
+        - name: "b"
+          method: "POST"
+
+
