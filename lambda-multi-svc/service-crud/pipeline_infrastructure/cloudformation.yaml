@@ -8,7 +8,7 @@ Resources:
       BucketEncryption:
         ServerSideEncryptionConfiguration:
           - ServerSideEncryptionByDefault:
-            SSEAlgorithm: 'AES256'
+              SSEAlgorithm: 'AES256'
   BuildProject:
     Type: AWS::CodeBuild::Project
     Properties:
