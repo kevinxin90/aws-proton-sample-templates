@@ -1,3 +1,5 @@
+> ⚠️ End of support notice: On October 7, 2026, AWS will end support for AWS Proton. After October 7, 2026, you will no longer be able to access the AWS Proton console or AWS Proton resources. Your deployed infrastructure will remain intact. For more information, see AWS Proton Service Deprecation and Migration Guide.
+
 ## AWS Proton Sample CloudFormation Templates
 This repository is a curated list of sample templates to use within AWS Proton that are authored for integration with AWS CloudFormation.
 
